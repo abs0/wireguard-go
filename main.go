@@ -38,7 +38,7 @@ func printUsage() {
 
 func warning() {
 	switch runtime.GOOS {
-	case "linux", "freebsd", "openbsd":
+	case "linux", "freebsd", "openbsd", "netbsd":
 		if os.Getenv(ENV_WG_PROCESS_FOREGROUND) == "1" {
 			return
 		}
